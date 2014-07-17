@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sinergy/android-signaturepad.svg?branch=master)](https://travis-ci.org/sinergy/android-signaturepad)
+
 Android Signature Pad
 ====================
 
@@ -9,7 +11,7 @@ Android Signature Pad is an Android library for drawing smooth signatures. It us
  * Bézier implementation for a smoother line
  * Variable point size based on velocity
  * Customizable pen color and size
- 
+
 ##Usage
 
 *Please see the `/SignaturePad-Example` app for a more detailed code example of how to use the library.*
@@ -36,21 +38,21 @@ Android Signature Pad is an Android library for drawing smooth signatures. It us
 
  An `OnSignedListener` can be set on the view:
   ```java
-  
+
  mSignaturePad = (SignaturePad) findViewById(R.id.signature_pad);
  mSignaturePad.setOnSignedListener(new SignaturePad.OnSignedListener() {
      @Override
      public void onSigned() {
          //Event triggered when the pad is signed
      }
- 
+
      @Override
      public void onClear() {
          //Event triggered when the pad is cleared
      }
  });
   ```
- 
+
 4. Get signature Bitmap
  * `getSignatureBitmap()` - A signature bitmap with a white background.
  * `getTransparentSignatureBitmap()` - A signature bitmap with a transparent background.
